@@ -7,27 +7,11 @@ public class wiseSaying {
     private String content;
     private String author;
 
-    public wiseSaying(int id, String regDate, String content, String author) {
+    public wiseSaying() {
         this.id = id;
         this.regDate = regDate;
         this.content = content;
         this.author = author;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public int getId() {
@@ -46,8 +30,26 @@ public class wiseSaying {
         this.regDate = regDate;
     }
 
-    public String toString() {
-        return "";
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+
+
+    public String toString(){
+        return "id: " + id + " regDate: " + regDate + " content: " + content + " author: " + author;
     }
 
 }
